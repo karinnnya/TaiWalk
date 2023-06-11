@@ -90,8 +90,6 @@
               </h5>
               <p class="pt-2 fs-5">活動介紹：</p>
               <p class="lh-lg">
-                {{ selectedData }}
-
                 {{ selectedData.Description }}
               </p>
 

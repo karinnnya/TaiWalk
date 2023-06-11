@@ -211,16 +211,16 @@ export default {
       while (randomIndexSet.size < 4) {
         randomIndexSet.add(Math.floor(Math.random() * this.attractions.length));
       }
-      randomIndexSet.forEach((randomIndex) => {
-        const attraction = this.attractions[randomIndex];
-        if (attraction.Picture?.PictureUrl1) {
-          this.RandomAttractions.push(attraction);
-        }
-      });
-
       // randomIndexSet.forEach((randomIndex) => {
-      //   this.RandomAttractions.push(this.attractions[randomIndex]);
+      //   const attraction = this.attractions[randomIndex];
+      //   if (attraction.Picture?.PictureUrl1) {
+      //     this.RandomAttractions.push(attraction);
+      //   }
       // });
+
+      randomIndexSet.forEach((randomIndex) => {
+        this.RandomAttractions.push(this.attractions[randomIndex]);
+      });
     },
 
     async getRandomFoods() {
